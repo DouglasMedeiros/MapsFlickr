@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoDetailViewController" customModule="MapsFlickr" customModuleProvider="target">
+            <connections>
+                <outlet property="photoImage" destination="5FS-b0-idh" id="ZOg-Jk-RDi"/>
+                <outlet property="photoTitle" destination="iQA-2p-xGI" id="8LS-fy-Jgf"/>
+                <outlet property="view" destination="iN0-l3-epB" id="NIm-WB-L5a"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5FS-b0-idh">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="iQA-2p-xGI">
+                    <rect key="frame" x="0.0" y="510" width="600" height="90"/>
+                    <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.20000000000000001" alpha="0.7018694196428571" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="B2y-jH-hX3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V84-n3-djH">
+                    <rect key="frame" x="8" y="8" width="81" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.31391501913265307" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Fechar">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="dismiss" destination="-1" eventType="touchUpInside" id="9D4-YJ-RFw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iQA-2p-xGI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5T2-nq-RpG"/>
+                <constraint firstAttribute="trailing" secondItem="iQA-2p-xGI" secondAttribute="trailing" id="DpT-rC-gSJ"/>
+                <constraint firstItem="5FS-b0-idh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="R76-0K-T4f"/>
+                <constraint firstItem="5FS-b0-idh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VkK-Uo-bap"/>
+                <constraint firstAttribute="trailing" secondItem="5FS-b0-idh" secondAttribute="trailing" id="cF8-dd-ekp"/>
+                <constraint firstAttribute="bottom" secondItem="5FS-b0-idh" secondAttribute="bottom" id="p0G-tN-seR"/>
+                <constraint firstAttribute="bottom" secondItem="iQA-2p-xGI" secondAttribute="bottom" id="swd-cS-O6a"/>
+            </constraints>
+            <point key="canvasLocation" x="234" y="196"/>
+        </view>
+    </objects>
+</document>

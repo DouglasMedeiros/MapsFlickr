@@ -1,0 +1,35 @@
+## Build
+*/build/*
+DerivedData
+build_in_detail.txt
+build_in_detail_resume.txt
+swiftlint.result.json
+
+## Various
+.DS_Store
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+
+# AppCode
+.idea/
+
+##Others
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+## ObjC/Swift
+*.hmap
+*.ipa
+
+## CocoaPods
+Podfile.lock
+Pods/
