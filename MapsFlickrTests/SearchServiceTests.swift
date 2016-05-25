@@ -54,7 +54,7 @@ class SearchServiceTests: XCTestCase {
                     XCTFail("Result invalid")
                 }
 
-                XCTAssertEqual(responseURL.absoluteString, "https://api.flickr.com/services/rest/?method=flickr.photos.search&format=json&api_key=de588f636351940ff7e359de88f122d0&bbox=-74.7949287047143,-45.0411545564247,-34.1894462952857,21.0288531663584&extras=geo,url_t,url_m&per_page=100&nojsoncallback=1")
+                XCTAssertEqual(responseURL.absoluteString, "https://api.flickr.com/services/rest/?method=flickr.photos.search&format=json&api_key=de588f636351940ff7e359de88f122d0&bbox=-74.7949287047143,-45.0411545564247,-34.1894462952857,21.0288531663584&extras=geo,url_t,url_m&per_page=100&nojsoncallback=1&tags=dogs")
                 XCTAssertEqual(HTTPResponse.statusCode, 200)
                 XCTAssertEqual(MIMEType, "application/json")
             } else {

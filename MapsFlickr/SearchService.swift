@@ -18,7 +18,7 @@ extension APIManager {
         let apiKey = Constants.Config.Flickr.APIKey
         let host = Constants.Config.Flickr.Host
         
-        let url = NSMutableURLRequest(URL: NSURL(string: "\(host)/services/rest/?method=flickr.photos.search&format=json&api_key=\(apiKey)&bbox=\(position.0.longitude),\(position.0.latitude),\(position.1.longitude),\(position.1.latitude)&extras=geo,url_t,url_m&per_page=100&nojsoncallback=1")!)
+        let url = NSMutableURLRequest(URL: NSURL(string: "\(host)/services/rest/?method=flickr.photos.search&format=json&api_key=\(apiKey)&bbox=\(position.0.longitude),\(position.0.latitude),\(position.1.longitude),\(position.1.latitude)&extras=geo,url_t,url_m&per_page=100&nojsoncallback=1&tags=dogs")!)
 
         return self.manager.request(.GET, url,
             parameters: nil,
